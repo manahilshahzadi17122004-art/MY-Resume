@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Manahil Shahzadi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+      body {
+        background: #050505;
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0;
+      }
+      .fade-up-1 { animation-delay: 0.1s; }
+      .fade-up-2 { animation-delay: 0.2s; }
+      .fade-up-3 { animation-delay: 0.3s; }
+      .fade-up-4 { animation-delay: 0.4s; }
+      .fade-up-5 { animation-delay: 0.5s; }
+      .fade-up-6 { animation-delay: 0.6s; }
+      .fade-up-7 { animation-delay: 0.7s; }
+      .skill-bar {
+        background: linear-gradient(to right, #3b82f6, #60a5fa);
+        height: 6px;
+        border-radius: 999px;
+        transition: width 1.5s ease-out;
+      }
+      .lang-bar {
+        height: 6px;
+        border-radius: 999px;
+        transition: width 1.5s ease-out;
+      }
+      @media print {
+        body {
+          background: #111 !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .no-print {
+          display: none !important;
+        }
+        .max-w-4xl {
+          max-width: 100% !important;
+        }
+      }
+      .timeline-dot {
+        width: 12px;
+        height: 12px;
+        background: #3b82f6;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+        flex-shrink: 0;
+      }
+      .timeline-line {
+        width: 2px;
+        background: rgba(59, 130, 246, 0.2);
+        flex-shrink: 0;
+      }
+      .tag {
+        font-size: 11px;
+        padding: 4px 12px;
+        border-radius: 9999px;
+      }
+    </style>
+  </head>
+  <body class="text-white min-h-screen">
+    <!-- Print Button -->
+    <div class="no-print fixed top-6 right-6 z-50 fade-up fade-up-1">
+      <button
+        onclick="window.print()"
+        class="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors shadow-lg shadow-blue-600/20"
+      >
+        <i data-lucide="printer" class="w-4 h-4"></i>
+        Print / Save PDF
+      </button>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+      <!-- ════════════ HEADER ════════════ -->
+      <header
+        class="fade-up fade-up-1 border border-white/10 rounded-3xl p-8 md:p-10 mb-8"
+        style="background: rgba(23, 23, 23, 0.5)"
+      >
+        <div class="flex flex-col md:flex-row gap-8 items-start">
+          <div
+            class="w-28 h-28 md:w-32 md:h-32 rounded-2xl overflow-hidden flex-shrink-0 border-2 border-white/10 flex items-center justify-center"
+            style="background: rgba(59, 130, 246, 0.12)"
+          >
+            <span class="text-4xl font-medium text-blue-400">MS</span>
+          </div>
+          <div class="flex-1">
+            <h1 class="text-3xl md:text-4xl font-medium tracking-tight">
+              Manahil Shahzadi
+            </h1>
+            <p class="text-blue-400 font-medium mt-1">
+              Software Engineer · 7th Semester
+            </p>
+
+            <p class="text-neutral-400 text-sm mt-4 leading-relaxed max-w-2xl">
+              Software Engineering student (7th Semester, GPA 3.5/4.0) at
+              University of Gujrat with hands-on experience building
+              full-stack web applications and secure system prototypes
+              through academic coursework and an internship at CodeAlpha.
+              Proficient in C++, Java, Python, and ASP.NET Core MVC, with
+              practical exposure to database design, UML-based system
+              modeling, and ethical hacking fundamentals. Seeking a Software
+              Engineering internship or entry-level role to apply strong
+              problem-solving skills and contribute to real-world product
+              development.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+              <div class="flex items-center gap-2.5 text-sm text-neutral-300">
+                <i data-lucide="mail" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                manahilshahzadi17122004@gmail.com
+              </div>
+              <div class="flex items-center gap-2.5 text-sm text-neutral-300">
+                <i data-lucide="phone" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                +92 3279736200 (WhatsApp)
+              </div>
+              <div class="flex items-center gap-2.5 text-sm text-neutral-300">
+                <i data-lucide="map-pin" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                District Gujrat, Punjab, Pakistan
+              </div>
+              <div class="flex items-center gap-2.5 text-sm text-neutral-300">
+                <i data-lucide="linkedin" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                linkedin.com/in/manahil-shahzadi-725b283a8
+              </div>
+              <div class="flex items-center gap-2.5 text-sm text-neutral-300">
+                <i data-lucide="github" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                github.com/manahilshahzadi17122004-art
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ════════════ EDUCATION ════════════ -->
+      <section
+        class="fade-up fade-up-2 border border-white/10 rounded-3xl p-8 md:p-10 mb-8"
+        style="background: rgba(23, 23, 23, 0.5)"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center">
+            <i data-lucide="graduation-cap" class="w-5 h-5 text-blue-400"></i>
+          </div>
+          <h2 class="text-xl font-medium tracking-tight">Education</h2>
+        </div>
+        <div class="space-y-6">
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-1">
+            <div>
+              <h3 class="text-base font-medium">BS Software Engineering</h3>
+              <p class="text-neutral-400 text-sm mt-0.5">University of Gujrat</p>
+            </div>
+            <div class="text-right flex-shrink-0">
+              <p class="text-blue-400 text-sm font-medium">Semester 7 (Ongoing)</p>
+              <p class="text-neutral-500 text-xs mt-0.5">GPA: 3.5 / 4.0</p>
+            </div>
+          </div>
+          <hr class="border-white/5" />
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-1">
+            <div>
+              <h3 class="text-base font-medium">FSc Pre-Engineering</h3>
+              <p class="text-neutral-400 text-sm mt-0.5">
+                Ibn-e-Imam Science College, JPJ
+              </p>
+              <p class="text-neutral-500 text-xs mt-1">Gujranwala Board</p>
+            </div>
+            <div class="text-right flex-shrink-0">
+              <p class="text-blue-400 text-sm font-medium">2022</p>
+              <p class="text-neutral-500 text-xs mt-0.5">Marks: 868 / 1100 (80%)</p>
+            </div>
+          </div>
+          <hr class="border-white/5" />
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-1">
+            <div>
+              <h3 class="text-base font-medium">Matriculation, Computer Science</h3>
+              <p class="text-neutral-400 text-sm mt-0.5">
+                Govt. Girls High School, JPJ
+              </p>
+              <p class="text-neutral-500 text-xs mt-1">
+                Board of Intermediate & Secondary Education, Gujranwala
+              </p>
+            </div>
+            <div class="text-right flex-shrink-0">
+              <p class="text-blue-400 text-sm font-medium">2020</p>
+              <p class="text-neutral-500 text-xs mt-0.5">Marks: 976 / 1100 (89%)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════ EXPERIENCE ════════════ -->
+      <section
+        class="fade-up fade-up-3 border border-white/10 rounded-3xl p-8 md:p-10 mb-8"
+        style="background: rgba(23, 23, 23, 0.5)"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center">
+            <i data-lucide="briefcase" class="w-5 h-5 text-blue-400"></i>
+          </div>
+          <h2 class="text-xl font-medium tracking-tight">Professional Experience</h2>
+        </div>
+
+        <div class="space-y-0">
+          <!-- CodeAlpha Internship -->
+          <div class="flex gap-5">
+            <div class="flex flex-col items-center">
+              <div class="timeline-dot mt-1.5"></div>
+              <div class="timeline-line flex-1 my-1"></div>
+            </div>
+            <div class="pb-8 flex-1">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                <div>
+                  <h3 class="text-base font-medium">
+                    Software Engineering Intern — CodeAlpha (Remote)
+                  </h3>
+                </div>
+                <p class="text-blue-400 text-sm font-medium mt-1 md:mt-0">
+                  July 1 – July 30, 2026
+                </p>
+              </div>
+              <ul class="mt-3 space-y-2 text-sm text-neutral-300 leading-relaxed">
+                <li class="flex gap-2.5">
+                  <span class="text-blue-400 mt-0.5 flex-shrink-0">•</span>Developed
+                  SocialMediaApp (social networking platform), Ecommerce (online
+                  shopping platform), and FlowBoard (task/workflow management
+                  board) as part of a remote internship.
+                </li>
+                <li class="flex gap-2.5">
+                  <span class="text-blue-400 mt-0.5 flex-shrink-0">•</span>Applied
+                  software development lifecycle (SDLC) practices from
+                  requirement analysis through delivery, collaborating within a
+                  remote development team.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Home Tutor -->
+          <div class="flex gap-5">
+            <div class="flex flex-col items-center">
+              <div class="timeline-dot mt-1.5"></div>
+            </div>
+            <div class="flex-1">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                <div>
+                  <h3 class="text-base font-medium">Home Tutor — Self-Employed</h3>
+                </div>
+                <p class="text-blue-400 text-sm font-medium mt-1 md:mt-0">
+                  2024 – 2026
+                </p>
+              </div>
+              <ul class="mt-3 space-y-2 text-sm text-neutral-300 leading-relaxed">
+                <li class="flex gap-2.5">
+                  <span class="text-blue-400 mt-0.5 flex-shrink-0">•</span>Delivered
+                  personalized academic tutoring to students, adapting teaching
+                  methods to individual learning styles and pace.
+                </li>
+                <li class="flex gap-2.5">
+                  <span class="text-blue-400 mt-0.5 flex-shrink-0">•</span>Prepared
+                  lesson plans and assessments, strengthening communication,
+                  time management, and problem-solving skills through
+                  consistent one-on-one instruction.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════ SKILLS ════════════ -->
+      <section
+        class="fade-up fade-up-4 border border-white/10 rounded-3xl p-8 md:p-10 mb-8"
+        style="background: rgba(23, 23, 23, 0.5)"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center">
+            <i data-lucide="code-2" class="w-5 h-5 text-blue-400"></i>
+          </div>
+          <h2 class="text-xl font-medium tracking-tight">Technical Skills</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Left: Skill Bars -->
+          <div>
+            <h3 class="text-xs font-medium text-neutral-500 uppercase tracking-widest mb-5">
+              Programming & Technical
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-neutral-200">C++</span><span class="text-neutral-500">85%</span>
+                </div>
+                <div class="w-full h-1.5 bg-white/5 rounded-full">
+                  <div class="skill-bar" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-neutral-200">Java</span><span class="text-neutral-500">78%</span>
+                </div>
+                <div class="w-full h-1.5 bg-white/5 rounded-full">
+                  <div class="skill-bar" style="width: 78%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-neutral-200">Python</span><span class="text-neutral-500">80%</span>
+                </div>
+                <div class="w-full h-1.5 bg-white/5 rounded-full">
+                  <div class="skill-bar" style="width: 80%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-neutral-200">HTML / CSS</span><span class="text-neutral-500">85%</span>
+                </div>
+                <div class="w-full h-1.5 bg-white/5 rounded-full">
+                  <div class="skill-bar" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-neutral-200">ASP.NET / .NET Core MVC</span><span class="text-neutral-500">82%</span>
+                </div>
+                <div class="w-full h-1.5 bg-white/5 rounded-full">
+                  <div class="skill-bar" style="width: 82%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-neutral-200">WordPress</span><span class="text-neutral-500">78%</span>
+                </div>
+                <div class="w-full h-1.5 bg-white/5 rounded-full">
+                  <div class="skill-bar" style="width: 78%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-neutral-200">SQL Server / SQL Querying</span><span class="text-neutral-500">80%</span>
+                </div>
+                <div class="w-full h-1.5 bg-white/5 rounded-full">
+                  <div class="skill-bar" style="width: 80%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-neutral-200">Data Structures & Algorithms</span><span class="text-neutral-500">83%</span>
+                </div>
+                <div class="w-full h-1.5 bg-white/5 rounded-full">
+                  <div class="skill-bar" style="width: 83%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-neutral-200">Ethical Hacking & Security Testing</span><span class="text-neutral-500">75%</span>
+                </div>
+                <div class="w-full h-1.5 bg-white/5 rounded-full">
+                  <div class="skill-bar" style="width: 75%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1.5">
+                  <span class="text-neutral-200">UML Modeling</span><span class="text-neutral-500">84%</span>
+                </div>
+                <div class="w-full h-1.5 bg-white/5 rounded-full">
+                  <div class="skill-bar" style="width: 84%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Tags -->
+          <div class="space-y-7">
+            <div>
+              <h3 class="text-xs font-medium text-neutral-500 uppercase tracking-widest mb-4">
+                Software Engineering Practices
+              </h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="tag bg-blue-600/10 border border-blue-500/20 text-blue-300">System Analysis</span>
+                <span class="tag bg-blue-600/10 border border-blue-500/20 text-blue-300">Requirement Engineering</span>
+                <span class="tag bg-blue-600/10 border border-blue-500/20 text-blue-300">Use Case / Class / Sequence / Activity Diagrams</span>
+                <span class="tag bg-blue-600/10 border border-blue-500/20 text-blue-300">SDLC</span>
+                <span class="tag bg-blue-600/10 border border-blue-500/20 text-blue-300">Database Design & Normalization</span>
+                <span class="tag bg-blue-600/10 border border-blue-500/20 text-blue-300">Data Analytics Fundamentals</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xs font-medium text-neutral-500 uppercase tracking-widest mb-4">
+                Cybersecurity
+              </h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="tag bg-green-600/10 border border-green-500/20 text-green-300">Ethical Hacking Fundamentals</span>
+                <span class="tag bg-green-600/10 border border-green-500/20 text-green-300">Security Testing & Analysis</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xs font-medium text-neutral-500 uppercase tracking-widest mb-4">
+                Tools & Platforms
+              </h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="tag bg-purple-600/10 border border-purple-500/20 text-purple-300">Git</span>
+                <span class="tag bg-purple-600/10 border border-purple-500/20 text-purple-300">GitHub</span>
+                <span class="tag bg-purple-600/10 border border-purple-500/20 text-purple-300">GitLab</span>
+                <span class="tag bg-purple-600/10 border border-purple-500/20 text-purple-300">Command Line</span>
+                <span class="tag bg-purple-600/10 border border-purple-500/20 text-purple-300">MS Office (Word, Excel, PowerPoint, Outlook)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════ ACADEMIC PROJECTS ════════════ -->
+      <section
+        class="fade-up fade-up-5 border border-white/10 rounded-3xl p-8 md:p-10 mb-8"
+        style="background: rgba(23, 23, 23, 0.5)"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center">
+            <i data-lucide="folder-open" class="w-5 h-5 text-blue-400"></i>
+          </div>
+          <h2 class="text-xl font-medium tracking-tight">Academic Projects</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="p-5 rounded-2xl border border-white/5 hover:border-white/10 transition-colors" style="background: rgba(255, 255, 255, 0.03)">
+            <h3 class="text-sm font-medium">🍽️ Restaurant Management System</h3>
+            <p class="text-neutral-400 text-xs mt-2 leading-relaxed">
+              Developed a full-stack CRUD web application for restaurant data
+              management using ASP.NET, .NET Core MVC, C#, SQL Server, HTML,
+              CSS, and JavaScript.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-3">
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">ASP.NET</span>
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">.NET Core MVC</span>
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">C#</span>
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">SQL Server</span>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl border border-white/5 hover:border-white/10 transition-colors" style="background: rgba(255, 255, 255, 0.03)">
+            <h3 class="text-sm font-medium">📚 Learning Management System (LMS)</h3>
+            <p class="text-neutral-400 text-xs mt-2 leading-relaxed">
+              Conducted requirement analysis and designed a course/student
+              management system using UML diagrams and workflow modeling.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-3">
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">UML Modeling</span>
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">Requirement Analysis</span>
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">Workflow Modeling</span>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl border border-white/5 hover:border-white/10 transition-colors" style="background: rgba(255, 255, 255, 0.03)">
+            <h3 class="text-sm font-medium">🏥 Hospital Management System</h3>
+            <p class="text-neutral-400 text-xs mt-2 leading-relaxed">
+              Designed a patient records and appointments management system
+              with UML class, sequence, and activity diagrams.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-3">
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">UML Class Diagrams</span>
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">Sequence Diagrams</span>
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">Activity Diagrams</span>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl border border-white/5 hover:border-white/10 transition-colors" style="background: rgba(255, 255, 255, 0.03)">
+            <h3 class="text-sm font-medium">🛡️ Cybersecurity Mini Tool Kit</h3>
+            <p class="text-neutral-400 text-xs mt-2 leading-relaxed">
+              Built a mini cybersecurity toolkit applying ethical hacking
+              concepts for practical security testing and analysis.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-3">
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">Ethical Hacking</span>
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">Security Testing</span>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl border border-white/5 hover:border-white/10 transition-colors" style="background: rgba(255, 255, 255, 0.03)">
+            <h3 class="text-sm font-medium">📦 Warehouse Inventory System</h3>
+            <p class="text-neutral-400 text-xs mt-2 leading-relaxed">
+              Translated a banking system concept into a warehouse inventory
+              system with design justification, complexity analysis, and
+              DSA-based implementation.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-3">
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">Data Structures & Algorithms</span>
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">Complexity Analysis</span>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl border border-white/5 hover:border-white/10 transition-colors" style="background: rgba(255, 255, 255, 0.03)">
+            <h3 class="text-sm font-medium">🔀 Version Control System Project</h3>
+            <p class="text-neutral-400 text-xs mt-2 leading-relaxed">
+              Practiced branching, merging, and repository management using
+              Git, GitHub, and GitLab.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mt-3">
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">Git</span>
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">GitHub</span>
+              <span class="text-[10px] bg-white/5 text-neutral-400 px-2 py-0.5 rounded-full">GitLab</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════ CERTIFICATIONS & COURSES ════════════ -->
+      <section
+        class="fade-up fade-up-6 border border-white/10 rounded-3xl p-8 md:p-10 mb-8"
+        style="background: rgba(23, 23, 23, 0.5)"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center">
+            <i data-lucide="award" class="w-5 h-5 text-blue-400"></i>
+          </div>
+          <h2 class="text-xl font-medium tracking-tight">Certifications & Courses</h2>
+        </div>
+        <p class="text-xs font-medium text-neutral-500 uppercase tracking-widest mb-4">
+          Completed
+        </p>
+        <ul class="space-y-3 text-sm text-neutral-300 leading-relaxed">
+          <li class="flex gap-2.5">
+            <span class="text-blue-400 mt-0.5 flex-shrink-0">•</span>Google AI
+            Essentials Specialization (5 courses) & Google Prompting
+            Essentials Specialization (4 courses) — verified via Coursera,
+            provided by University of Gujrat
+          </li>
+          <li class="flex gap-2.5">
+            <span class="text-blue-400 mt-0.5 flex-shrink-0">•</span>Ethical
+            Hacking & Cyber Security Course — LWE and Punjab Public
+            Institution
+          </li>
+          <li class="flex gap-2.5">
+            <span class="text-blue-400 mt-0.5 flex-shrink-0">•</span>Data
+            Analytics Specialization (9 courses) & Google Cybersecurity (9
+            courses) Specialization — verified via Coursera, provided by
+            University of Gujrat
+          </li>
+          <li class="flex gap-2.5">
+            <span class="text-blue-400 mt-0.5 flex-shrink-0">•</span>Graphic
+            Designing, AI Voice Generation, 3D Name Images, Video Editing &
+            Computer Course
+          </li>
+          <li class="flex gap-2.5">
+            <span class="text-blue-400 mt-0.5 flex-shrink-0">•</span>Digital
+            Marketing & E-Commerce and Full Stack Development Course —
+            offered by HEC
+          </li>
+          <li class="flex gap-2.5">
+            <span class="text-blue-400 mt-0.5 flex-shrink-0">•</span>Freelancing
+            & WordPress Course (3 Months) — DigiSkills.pk, April 3, 2026 –
+            July 2026
+          </li>
+        </ul>
+      </section>
+
+      <!-- ════════════ WORK PREFERENCES ════════════ -->
+      <section
+        class="fade-up fade-up-6 border border-white/10 rounded-3xl p-8 md:p-10 mb-8"
+        style="background: rgba(23, 23, 23, 0.5)"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center">
+            <i data-lucide="settings-2" class="w-5 h-5 text-blue-400"></i>
+          </div>
+          <h2 class="text-xl font-medium tracking-tight">Work Preferences</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="p-5 rounded-2xl border border-white/5" style="background: rgba(255, 255, 255, 0.03)">
+            <div class="flex items-center gap-2.5 mb-3">
+              <i data-lucide="monitor" class="w-4 h-4 text-blue-400"></i>
+              <p class="text-xs font-medium text-neutral-500 uppercase tracking-wider">
+                Work Mode
+              </p>
+            </div>
+            <div class="space-y-2">
+              <label class="flex items-center gap-2.5">
+                <div class="w-4 h-4 rounded border-2 border-blue-500 bg-blue-600 flex items-center justify-center">
+                  <i data-lucide="check" class="w-2.5 h-2.5 text-white"></i>
+                </div>
+                <span class="text-sm text-neutral-200">On-Site</span>
+              </label>
+              <label class="flex items-center gap-2.5">
+                <div class="w-4 h-4 rounded border-2 border-blue-500 bg-blue-600 flex items-center justify-center">
+                  <i data-lucide="check" class="w-2.5 h-2.5 text-white"></i>
+                </div>
+                <span class="text-sm text-neutral-200">Hybrid</span>
+              </label>
+              <label class="flex items-center gap-2.5">
+                <div class="w-4 h-4 rounded border-2 border-blue-500 bg-blue-600 flex items-center justify-center">
+                  <i data-lucide="check" class="w-2.5 h-2.5 text-white"></i>
+                </div>
+                <span class="text-sm text-neutral-200">Remote</span>
+              </label>
+            </div>
+          </div>
+          <div class="p-5 rounded-2xl border border-white/5" style="background: rgba(255, 255, 255, 0.03)">
+            <div class="flex items-center gap-2.5 mb-3">
+              <i data-lucide="clock" class="w-4 h-4 text-blue-400"></i>
+              <p class="text-xs font-medium text-neutral-500 uppercase tracking-wider">
+                Availability
+              </p>
+            </div>
+            <p class="text-sm text-neutral-200">Full-Time (40 hrs/week)</p>
+            <p class="text-xs text-neutral-500 mt-2">
+              Available from: <span class="text-neutral-300">1st September 2026</span>
+            </p>
+            <p class="text-xs text-neutral-500 mt-1">
+              Duration: <span class="text-neutral-300">6 – 8 weeks</span>
+            </p>
+          </div>
+          <div class="p-5 rounded-2xl border border-white/5" style="background: rgba(255, 255, 255, 0.03)">
+            <div class="flex items-center gap-2.5 mb-3">
+              <i data-lucide="target" class="w-4 h-4 text-blue-400"></i>
+              <p class="text-xs font-medium text-neutral-500 uppercase tracking-wider">
+                Expected Role
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="text-[10px] bg-blue-600/10 border border-blue-500/20 text-blue-300 px-2 py-0.5 rounded-full">Software Engineer Intern</span>
+              <span class="text-[10px] bg-blue-600/10 border border-blue-500/20 text-blue-300 px-2 py-0.5 rounded-full">Full Stack Developer Intern</span>
+              <span class="text-[10px] bg-blue-600/10 border border-blue-500/20 text-blue-300 px-2 py-0.5 rounded-full">Web Development Intern</span>
+              <span class="text-[10px] bg-blue-600/10 border border-blue-500/20 text-blue-300 px-2 py-0.5 rounded-full">Cyber Security Intern</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════ LANGUAGES & CORE COMPETENCIES ════════════ -->
+      <section
+        class="fade-up fade-up-7 border border-white/10 rounded-3xl p-8 md:p-10 mb-8"
+        style="background: rgba(23, 23, 23, 0.5)"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center">
+            <i data-lucide="languages" class="w-5 h-5 text-blue-400"></i>
+          </div>
+          <h2 class="text-xl font-medium tracking-tight">Languages & Core Competencies</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-7">
+          <div class="p-5 rounded-2xl border border-white/5" style="background: rgba(255, 255, 255, 0.03)">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl">🇵🇰</span>
+              <div>
+                <p class="text-sm font-medium">Urdu</p>
+                <p class="text-xs text-neutral-500">Native</p>
+              </div>
+            </div>
+            <div class="w-full h-1.5 bg-white/5 rounded-full">
+              <div class="lang-bar" style="width: 100%; background: linear-gradient(to right, #22c55e, #4ade80);"></div>
+            </div>
+          </div>
+          <div class="p-5 rounded-2xl border border-white/5" style="background: rgba(255, 255, 255, 0.03)">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl">🇬🇧</span>
+              <div>
+                <p class="text-sm font-medium">English</p>
+                <p class="text-xs text-neutral-500">Professional Working Proficiency</p>
+              </div>
+            </div>
+            <div class="w-full h-1.5 bg-white/5 rounded-full">
+              <div class="lang-bar" style="width: 75%; background: linear-gradient(to right, #3b82f6, #60a5fa);"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xs font-medium text-neutral-500 uppercase tracking-widest mb-4">
+            Core Competencies
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag bg-purple-600/10 border border-purple-500/20 text-purple-300">Problem-Solving</span>
+            <span class="tag bg-purple-600/10 border border-purple-500/20 text-purple-300">Teamwork</span>
+            <span class="tag bg-purple-600/10 border border-purple-500/20 text-purple-300">Adaptability</span>
+            <span class="tag bg-purple-600/10 border border-purple-500/20 text-purple-300">Time Management</span>
+            <span class="tag bg-purple-600/10 border border-purple-500/20 text-purple-300">Communication</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════ DECLARATION ════════════ -->
+      <section
+        class="fade-up fade-up-7 border border-white/10 rounded-3xl p-8 md:p-10 mb-8"
+        style="background: rgba(23, 23, 23, 0.5)"
+      >
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center">
+            <i data-lucide="shield-check" class="w-5 h-5 text-blue-400"></i>
+          </div>
+          <h2 class="text-xl font-medium tracking-tight">Declaration</h2>
+        </div>
+        <p class="text-sm text-neutral-300 leading-relaxed">
+          I hereby declare that all the information provided in this curriculum
+          vitae is true and correct to the best of my knowledge and belief. I am
+          available for an internship and am committed to contributing my best
+          efforts to the organization.
+        </p>
+        <div class="mt-8 flex flex-col items-end">
+          <p class="text-sm font-medium">Manahil Shahzadi</p>
+          <div class="w-32 border-b border-neutral-500 mt-2 mb-1"></div>
+          <p class="text-xs text-neutral-500">Date: August 8, 2026</p>
+        </div>
+      </section>
+
+      <footer class="text-center py-6">
+        <p class="text-xs text-neutral-600">
+          Curriculum Vitae · Manahil Shahzadi · Last Updated: August 2026
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
